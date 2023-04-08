@@ -28,7 +28,7 @@ const Duraction: React.FC = () => {
             `}
             >
               {el.name ? (
-                <Link to={`/cours/${el.name}`}>
+                <Link to={`/courses/${el.name}`}>
                   <div className={`p-[25px]`}>
                     <small className="mb-[50px] inline-block text-[22px] md:text-[26px] font-normal sm:font-semibold">
                       {el.name && el.name}
