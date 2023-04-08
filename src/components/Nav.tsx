@@ -4,7 +4,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { setHLogo } from "../redux/checkRegistrationSlice";
 import { selectAuth } from "./../redux/authSlice";
-import { useAppSelector } from './../redux/state';
+import { useAppSelector } from "./../redux/state";
 const menu: { name: string; link: string }[] = [
   {
     name: "Главная",
@@ -23,8 +23,24 @@ const Nav: React.FC = () => {
   const { name } = useAppSelector(selectAuth);
   const getImg = useAppSelector(setHLogo);
   const [openMenu, setOpenMenu] = React.useState<boolean>(false);
+
+  const [isTopOffSet, setIsTopOffSet] = React.useState<boolean>(true);
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setIsTopOffSet(true);
+      }
+      if (window.scrollY !== 0) setIsTopOffSet(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navBg = isTopOffSet ? "" : "bg-[#fbf1e3]";
   return (
-    <article className="fixed top-0 left-0 w-[100vw] py-[4px] z-50 border-b-[#383430] border border-solid">
+    <article
+      className={`${navBg} fixed top-0 left-0 w-[100vw] py-[4px] z-50 border-b-[#383430] border border-solid`}
+    >
       <div className="wc px-[15px] relative ">
         <div className="w-full flex justify-between items-center">
           <img
