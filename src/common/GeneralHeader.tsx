@@ -1,6 +1,6 @@
 import React from "react";
 import { images } from "../assets/img";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 interface IGeneralHeaderProps {
   subtitle?: string;
   nextSubtitle?: string;
@@ -23,18 +23,22 @@ const GeneralHeader: React.FC<IGeneralHeaderProps> = (props) => {
                 props.subtitle ? "inline-block" : "hidden"
               } `}
             >
-              <span
-                onClick={() => navigate(-1)}
-                className="cursor-pointer inline-block"
-              >
-                Главная
+              <span className="cursor-pointer inline-block">
+                <Link to="/">Главная</Link>
               </span>
               <img
                 className="inline-block mx-[5px]"
                 src={images.speakerStar1}
                 alt=""
               />
-              <span>{props.subtitle}</span>
+              <span
+                className={props.nextSubtitle ? "cursor-pointer" : ""}
+                onClick={() => {
+                  props.nextSubtitle ? navigate(-1) : "";
+                }}
+              >
+                {props.subtitle}
+              </span>
             </span>
             {props.useData}
             {props.nextSubtitle && (

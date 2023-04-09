@@ -24,9 +24,9 @@ const CertainCourse: React.FC<any> = () => {
   return (
     <div className="text-[#272523] bg-[#fef3e5]">
       <GeneralHeader
-        useData={name}
+        // useData={name}
         underTitle="Подготовка к олимпиадам"
-        subtitle="Обществознание"
+        subtitle={name}
         underTitle2="по Обществознанию"
       />
 
@@ -35,6 +35,7 @@ const CertainCourse: React.FC<any> = () => {
         filters={false}
         data={getCourse}
         title="Курс или интенсив – выбираешь ты"
+        rout={name}
       />
       <Footer />
     </div>

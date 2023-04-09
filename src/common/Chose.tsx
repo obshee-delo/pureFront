@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 // компонент на странице определенного курса
 
 const Chose: React.FC<any> = (props) => {
+  console.log(props.route);
   const dispatch = useAppDispatch();
   const cources = useAppSelector(coursesState);
   const filterCources = useAppSelector(filteredState);
@@ -46,7 +47,7 @@ const Chose: React.FC<any> = (props) => {
             .map((el: IFilterContent, i: number) => (
               // filterCources.filteredData.map(
               //   (el: { [key: string]: string }, i: number) => (
-              <Link to="/intensive">
+              <Link to={`intensive`}>
                 <article
                   key={i}
                   className="flex flex-col lg:flex-row lg:pr-[25px] gap-0 sm:gap-[20px] items-center border border-solid border-[#272523] rounded-[30px]"

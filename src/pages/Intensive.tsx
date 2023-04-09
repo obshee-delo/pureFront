@@ -12,16 +12,19 @@ import Week from "../components/Week";
 import FeedBack from "../components/FeedBack";
 import { setHLogo, backLogo } from "../redux/checkRegistrationSlice";
 import { useAppDispatch } from "../redux/state";
+import { useParams } from "react-router-dom";
 const Intensive = () => {
+  const { name } = useParams();
   const dispatch = useAppDispatch();
+  console.log(name);
   React.useEffect(() => {
     dispatch(backLogo());
   }, [setHLogo]);
   return (
     <div className="text-[#272523] bg-[#fef3e5] relative">
       <GeneralHeader
-        useData=""
-        subtitle="Обществознание"
+        // subtitle={name}
+        subtitle={name}
         nextSubtitle="Интенсив по подготовке к перечневым олимпиадам по обществознанию"
         underTitle="Интенсив по подготовке к перечневым олимпиадам по обществознанию"
         underTitle2="14 ЯНВАРЯ – 14 МАРТА"

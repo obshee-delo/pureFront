@@ -28,10 +28,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
 
-          <Route path={`/courses/:name`} element={<CertainCourse />} />
+          <Route path={`/courses/:name/*`}>
+            <Route index element={<CertainCourse />} />
+            <Route path="intensive" element={<Intensive />} />
+          </Route>
           <Route path="about" element={<About />} />
           <Route path="course/*" element={<Course />} />
-          <Route path="intensive" element={<Intensive />} />
           <Route path="reg" element={<Registration />} />
           <Route path="user/*" element={<Profile />}>
             <Route path="profile" element={<UserProfile />} />
