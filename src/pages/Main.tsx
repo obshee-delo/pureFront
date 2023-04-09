@@ -8,6 +8,7 @@ import Sooner from "../components/Sooner";
 import Speakers from "../components/Speakers";
 import { setHLogo, backLogo } from "../redux/checkRegistrationSlice";
 import { useAppDispatch } from "../redux/state";
+import MarqueeEl from "../common/Marquee";
 
 const Main = () => {
   const dispatch = useAppDispatch();
@@ -15,7 +16,7 @@ const Main = () => {
     dispatch(backLogo());
   }, [setHLogo]);
   return (
-    <div className={` pb-[90px]`}>
+    <div className={` pb-[0px]`}>
       <Header />
       <div className={`h-[100vh] `}></div>
       <div className="bg-[#fef3e5] z-[3] relative pt-[80px] sm:pt-[120px]">
@@ -26,6 +27,7 @@ const Main = () => {
         <FeedBack />
       </div>
       <Footer />
+      <MarqueeEl />
     </div>
   );
 };

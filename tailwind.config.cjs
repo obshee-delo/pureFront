@@ -9,6 +9,11 @@ module.exports = {
     margin: {
       margin: "0 auto",
     },
+    extend: {
+      content: {
+        bgMarquee: "assets/img/marqueeBg.png",
+      },
+    },
   },
 
   plugins: [require("tailwind-scrollbar")],

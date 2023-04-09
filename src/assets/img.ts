@@ -60,6 +60,7 @@ import sign2 from "./img/sign2.png";
 import sign3 from "./img/sign3.png";
 import defaultPerson from "./img/defaultPerson.png";
 import lessonChecked from "./img/lessonChecked.svg";
+import marqueeBg from "./img/marqueeBg.png";
 export const images = {
   lessonChecked,
   defaultPerson,

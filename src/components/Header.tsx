@@ -5,10 +5,10 @@ import { toast } from "react-toastify";
 const Header: React.FC = () => {
   return (
     <header
-      className={`pb-7 mb-[80px] fixed z-[1] flex flex-col justify-between h-[100vh]  bg-cover bg-center bg-no-repeat relaive max-w-[100vw]  pt-[70px] sm:pt-[160px]`}
+      className={`pb-5 mb-[80px] fixed z-[1] flex flex-col justify-between h-[100vh]  bg-cover bg-center bg-no-repeat relaive max-w-[100vw]  pt-[70px] sm:pt-[160px]`}
     >
       <div className="px-[15px] top-0 left-0  flex justify-end flex-col md:flex-row w-[97%] mx-[auto] xl:w-[1145px] relative ">
-        <h1 className="text-[#272523] sm:absolute relative left-0 sm:left-[15px] top-0 mb-[40px] lg:mb-0 sm:whitespace-nowrap leading-[105%] lg:max-w-[647px] text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px]">
+        <h1 className="text-[#272523] sm:absolute relative left-0 sm:left-[15px] top-0 mb-[25px] lg:mb-0 sm:whitespace-nowrap leading-[105%] lg:max-w-[647px] text-[35px] sm:text-[50px] md:text-[60px] lg:text-[70px]">
           Подготовка <br className="hidden sm:block" /> к олимпиадам –{" "}
           <br className="hidden sm:block" />
           <span className="font-bold">это общее дело</span>
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
                 </span>
               )}
               {el.text && (
-                <p className="w-[150px] xl:w-[178px] leading-[1.1] text-[14px] text-[#272523]">
+                <p className="w-[150px] xl:w-[178px] leading-[1.1] text-[13px] text-[#272523]">
                   {el.text}
                 </p>
               )}

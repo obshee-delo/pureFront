@@ -34,6 +34,7 @@ const GeneralHeader: React.FC<IGeneralHeaderProps> = (props) => {
                 src={images.speakerStar1}
                 alt=""
               />
+              <span>{props.subtitle}</span>
             </span>
             {props.useData}
             {props.nextSubtitle && (
