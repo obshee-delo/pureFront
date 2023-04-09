@@ -108,12 +108,12 @@ const Registration = () => {
   return (
     <div>
       <section className="h-full relative overflow-y-scroll min-h-screen mb-[50px] sm:mb-[0px] sm:h-[100vh] ">
-        <div className="pt-[30px] relative sm:pt-[89px] ">
+        <div className="pt-[30px] relative min-h-screen   sm:pt-[89px] ">
           <div className="flex relative  h-full min-h-screen">
             <article
               className={`flex ${
                 !showRegister ? "flex-row-reverse" : " flex-row"
-              } flex h-full relative w-[100vw]`}
+              } flex h-full min-h-screen relative w-[100vw]`}
             >
               <img
                 onClick={() => toast.success("great")}
