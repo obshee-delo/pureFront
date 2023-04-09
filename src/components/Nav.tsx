@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { setHLogo } from "../redux/checkRegistrationSlice";
 import { selectAuth } from "./../redux/authSlice";
 import { useAppSelector } from "./../redux/state";
+import { images } from "./../assets/img";
 const menu: { name: string; link: string }[] = [
   {
     name: "Главная",
@@ -37,9 +38,10 @@ const Nav: React.FC = () => {
   }, []);
 
   const navBg = isTopOffSet ? "" : "bg-[#fbf1e3]";
+  const regBg = getImg == images.hChaneLogo ? "bg-white" : "";
   return (
     <article
-      className={`${navBg} fixed top-0 left-0 w-[100vw] py-[4px] z-50 border-b-[#383430] border border-solid`}
+      className={`${navBg} ${regBg} fixed top-0 left-0 w-[100vw] py-[4px] z-50 border-b-[#383430] border border-solid`}
     >
       <div className="wc px-[15px] relative ">
         <div className="w-full flex justify-between items-center">

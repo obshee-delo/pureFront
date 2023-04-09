@@ -106,23 +106,23 @@ const Registration = () => {
     }
   }, [isLoginError, isRegisterError]);
   return (
-    <>
-      <section className="h-auto mb-[50px] sm:mb-[0px] sm:h-[100vh] ">
-        <div className="pt-[30px] sm:pt-[89px] h-full">
-          <div className="flex   h-full">
+    <div>
+      <section className="h-full relative overflow-y-scroll min-h-screen mb-[50px] sm:mb-[0px] sm:h-[100vh] ">
+        <div className="pt-[30px] relative sm:pt-[89px] ">
+          <div className="flex relative  h-full min-h-screen">
             <article
               className={`flex ${
                 !showRegister ? "flex-row-reverse" : " flex-row"
-              } flex   w-[100vw]`}
+              } flex h-full relative w-[100vw]`}
             >
               <img
                 onClick={() => toast.success("great")}
-                className="w-[50%]  min-h-[100%] hidden sm:block"
+                className="w-[50%]  h-[minmax(195vh,100%)] relative hidden sm:block box-border"
                 src={!showRegister ? images.auth : images.log}
                 alt=""
               />
               <div
-                className={`grow ${
+                className={`grow h-fit ${
                   !showRegister
                     ? "flex-[100%] sm:flex-[50%] grow flex justify-start sm:justify-end"
                     : "flex-[50%] "
@@ -276,7 +276,7 @@ const Registration = () => {
       <div className="block sm:hidden">
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 
