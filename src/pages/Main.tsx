@@ -9,6 +9,8 @@ import Speakers from "../components//mainPage/Speakers";
 import { setHLogo, backLogo } from "../redux/checkRegistrationSlice";
 import { useAppDispatch } from "../redux/state";
 import MarqueeEl from "../common/commonCoponents/Marquee";
+import PaymentForm from "../components/PaymentForm";
+import MyPaymentForm from "../components/payment/PayForm";
 
 const Main = () => {
   const dispatch = useAppDispatch();
