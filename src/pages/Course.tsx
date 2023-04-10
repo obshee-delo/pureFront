@@ -10,6 +10,9 @@ const Course = () => {
   const dispatch = useAppDispatch();
   React.useEffect(() => {
     dispatch(backLogo());
+    window.scrollTo({
+      top: 0,
+    });
   }, [setHLogo]);
   return (
     <div className="text-[#272523] bg-[#fef3e5]">

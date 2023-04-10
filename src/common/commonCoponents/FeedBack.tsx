@@ -21,7 +21,7 @@ const FeedBack: React.FC = () => {
             {feedback.map((el, i) => (
               <SwiperSlide className="flex cursor-grab" key={i}>
                 <img
-                  className="w-[193px] md:w-[170px] lg:h-[328px]"
+                  className="w-[193px] rounded-[30px] border border-black md:w-[170px] lg:h-[328px]"
                   src={el.img}
                   alt=""
                 />

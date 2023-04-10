@@ -14,6 +14,9 @@ const Main = () => {
   const dispatch = useAppDispatch();
   React.useEffect(() => {
     dispatch(backLogo());
+    window.scrollTo({
+      top: 0,
+    });
   }, [setHLogo]);
   return (
     <div className={` pb-[0px]`}>

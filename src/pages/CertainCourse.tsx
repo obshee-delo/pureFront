@@ -19,6 +19,9 @@ const CertainCourse: React.FC<any> = () => {
   React.useEffect(() => {
     dispatch(backLogo());
     dispatch(getCertainCource(name));
+    window.scrollTo({
+      top: 0,
+    });
   }, [setHLogo]);
   const dataCource = useAppSelector(certainCourceState);
   return (
