@@ -24,11 +24,21 @@ import tab5 from "./img/tab5.png";
 import tabContent5 from "./img/tab-c-5.png";
 import tab6 from "./img/tab6.png";
 import tabContent6 from "./img/tab-c-6.png";
+
+import tabMobileContent1 from "./img/mob-speaker-1.png";
+import tabMobileContent2 from "./img/mob-speaker-2.png";
+import tabMobileContent3 from "./img/mob-speaker-3.png";
+import tabMobileContent4 from "./img/mob-speaker-4.png";
+import tabMobileContent5 from "./img/mob-speaker-5.png";
+import tabMobileContent6 from "./img/mob-speaker-6.png";
 import speakerStar1 from "./img/t-s-1.svg";
 import speakerStar2 from "./img/t-s-2.svg";
 import feed1 from "./img/review-1.png";
 import feed2 from "./img/review-2.png";
 import feed3 from "./img/review-3.png";
+import feedMobile1 from "./img/mob-review-1.png";
+import feedMobile2 from "./img/mob-review-2.png";
+import feedMobile3 from "./img/review-3.png";
 import about from "./img/about.png";
 import wait from "./img/wait.png";
 import vk from "./img/vk.svg";
@@ -62,6 +72,15 @@ import defaultPerson from "./img/defaultPerson.png";
 import lessonChecked from "./img/lessonChecked.svg";
 import marqueeBg from "./img/marqueeBg.png";
 export const images = {
+  tabMobileContent1,
+  tabMobileContent2,
+  tabMobileContent3,
+  tabMobileContent4,
+  tabMobileContent5,
+  tabMobileContent6,
+  feedMobile1,
+  feedMobile2,
+  feedMobile3,
   lessonChecked,
   defaultPerson,
   sign1,

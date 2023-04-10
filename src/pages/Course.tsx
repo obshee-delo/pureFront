@@ -1,9 +1,9 @@
 import React from "react";
 import { filterContent } from "../common/text";
-import AboutCourses from "../components/AboutCourses";
-import Chose from "../common/Chose";
-import Footer from "../components/Footer";
-import GeneralHeader from "../common/GeneralHeader";
+import AboutCourses from "../components/userPages/AboutCourses";
+import Chose from "../common/commonCoponents/Chose";
+import Footer from "../common/footer/Footer";
+import GeneralHeader from "../common/commonHeader/GeneralHeader";
 import { setHLogo, backLogo } from "../redux/checkRegistrationSlice";
 import { useAppDispatch } from "../redux/state";
 const Course = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Video from "../components/Video";
-import Lessons from "./../components/Lessons";
+import Video from "../components/userPages/Video";
+import Lessons from "../components/Lessons";
 
 const Videolessons = () => {
   const navigateBack = useNavigate();

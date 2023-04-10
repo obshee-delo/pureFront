@@ -1,6 +1,6 @@
 import { Route, Routes, useParams } from "react-router-dom";
 import React from "react";
-import Nav from "./components/Nav";
+import Nav from "./common/navigation/Nav";
 import About from "./pages/About";
 import CertainCourse from "./pages/CertainCourse";
 import Course from "./pages/Course";
@@ -8,11 +8,11 @@ import Main from "./pages/Main";
 import Intensive from "./pages/Intensive";
 import Registration from "./pages/Registration";
 import Profile from "./pages/Profile";
-import UserCourse from "./components/UserCourse";
-import UserProfile from "./components/UserProfile";
+import UserCourse from "./components/userPages/UserCourse";
+import UserProfile from "./components/userPages/UserProfile";
 import UserCourseDetail from "./pages/UserCourseDetail";
 import Videolessons from "./pages/Videolessons";
-import Video from "./components/Video";
+import Video from "./components/userPages/Video";
 import { useAppDispatch } from "./redux/state";
 import { setUsers } from "./redux/authSlice";
 function App() {

@@ -1,15 +1,14 @@
 import React from "react";
-import Duraction from "../components/Duraction";
-import FeedBack from "../components/FeedBack";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import More from "../components/More";
-import Sooner from "../components/Sooner";
-import Speakers from "../components/Speakers";
+import Duraction from "../components/mainPage/Duraction";
+import FeedBack from "../common/commonCoponents/FeedBack";
+import Footer from "../common/footer/Footer";
+import Header from "../components//mainPage/Header";
+import More from "../components//mainPage/More";
+import Sooner from "../components//mainPage/Sooner";
+import Speakers from "../components//mainPage/Speakers";
 import { setHLogo, backLogo } from "../redux/checkRegistrationSlice";
 import { useAppDispatch } from "../redux/state";
-import MarqueeEl from "../common/Marquee";
-import PayForm from "../components/payment/PayForm";
+import MarqueeEl from "../common/commonCoponents/Marquee";
 
 const Main = () => {
   const dispatch = useAppDispatch();

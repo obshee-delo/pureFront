@@ -1,6 +1,6 @@
 import React from "react";
 import { lessons } from "../common/text";
-import { images } from "./../assets/img";
+import { images } from "../assets/img";
 import { Link } from "react-router-dom";
 
 const Lessons: React.FC = () => {

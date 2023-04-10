@@ -2,7 +2,7 @@ import React from "react";
 import { changeLogo } from "../redux/checkRegistrationSlice";
 import { setHLogo } from "../redux/checkRegistrationSlice";
 import { images } from "../assets/img";
-import Footer from "./../components/Footer";
+import Footer from "../common/footer/Footer";
 import {
   useLoginUserMutation,
   useRegisterUserMutation,
@@ -107,7 +107,7 @@ const Registration = () => {
   }, [isLoginError, isRegisterError]);
   return (
     <div>
-      <section className="h-full relative overflow-y-scroll min-h-screen mb-[50px] sm:mb-[0px] sm:h-[100vh] ">
+      <section className="h-full relative lg:overflow-y-hidden min-h-screen mb-[50px] sm:mb-[0px] sm:h-[100vh] ">
         <div className="pt-[30px] relative min-h-screen   sm:pt-[89px] ">
           <div className="flex relative  h-full min-h-screen">
             <article
@@ -117,7 +117,7 @@ const Registration = () => {
             >
               <img
                 onClick={() => toast.success("great")}
-                className="w-[50%]  h-[minmax(195vh,100%)] relative hidden sm:block box-border"
+                className="w-[50%]   max-h-[culc(100%-300px)] relative mt-[-5%] scale-y-[95%] hidden sm:block box-border"
                 src={!showRegister ? images.auth : images.log}
                 alt=""
               />
@@ -131,8 +131,8 @@ const Registration = () => {
                 <div
                   className={` ${
                     !showRegister
-                      ? "w-full pl-5 lg:pl-0 lg:w-[455px] pt-[45px] pr-[15px] md:pr-[50px] lg:pr-[112px]"
-                      : "w-auto pr-5 lg:pr-0 lg:w-[455px] pt-[45px] pl-[15px] md:pl-[50px] lg:pl-[112px]"
+                      ? "w-full pl-5 lg:pl-0 lg:w-[455px] pt-[30px] pr-[15px] md:pr-[50px] lg:pr-[112px]"
+                      : "w-auto pr-5 lg:pr-0 lg:w-[455px] pt-[30px] pl-[15px] md:pl-[50px] lg:pl-[112px]"
                   } `}
                 >
                   <h1 className="text-[36px] sm:text-[40px] font-semibold mb-[20px]">
@@ -232,7 +232,7 @@ const Registration = () => {
                       </button>
                     )}
                   </form>
-                  <div className="flex flex-col mb-[20px] relative">
+                  <div className="flex flex-col mb-[10px] relative">
                     <span className="mb-[25px] text-[12px] inline-block m-[0_auto] w-[86%] text-center sm:w-[70%]  after:content-[''] after:absolute after:top-[9px] after:left-0 after:w-[8%] sm:after:w-[12%] after:bg-black after:h-[1px]                                      before:content-[''] before:absolute before:top-[9px] before:right-0 before:w-[8%] sm:before:w-[12%] before:bg-black before:h-[1px]">
                       или зарегестрируйтесь через соцсети
                     </span>

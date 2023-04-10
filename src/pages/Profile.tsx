@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "../common/footer/Footer";
 import { Link, Outlet } from "react-router-dom";
-import UserProfile from "../components/UserProfile";
+import UserProfile from "../components/userPages/UserProfile";
 import { useAppDispatch } from "./../redux/state";
 import { logOut } from "./../redux/authSlice";
 import { useNavigate } from "react-router-dom";

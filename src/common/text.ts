@@ -1,4 +1,5 @@
 import { images } from "../assets/img";
+import { ITabContent } from "./module";
 export const header: {
   none: boolean;
   img: string;
@@ -164,7 +165,7 @@ export const duraction = [
     color: "blue",
   },
   {
-    name: "право",
+    name: "Право",
     color: "blue",
   },
   {
@@ -219,13 +220,14 @@ export const more = [
   },
 ];
 
-export const tab = [
+export const tab: Array<ITabContent> = [
   {
     title: "Михаил Гельфанд",
     textP: "Член Европейской Академии",
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab1,
     tabContentImg: images.tabContent1,
+    tanMobileContentImg: images.tabMobileContent1,
     color: "transparent",
   },
   {
@@ -234,6 +236,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab2,
     tabContentImg: images.tabContent2,
+    tanMobileContentImg: images.tabMobileContent2,
     color: "orange",
   },
   {
@@ -242,6 +245,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab3,
     tabContentImg: images.tabContent3,
+    tanMobileContentImg: images.tabMobileContent3,
     color: "blue",
   },
   {
@@ -250,6 +254,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab4,
     tabContentImg: images.tabContent4,
+    tanMobileContentImg: images.tabMobileContent4,
     color: "orange",
   },
   {
@@ -258,6 +263,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab5,
     tabContentImg: images.tabContent5,
+    tanMobileContentImg: images.tabMobileContent5,
     color: "pink",
   },
   {
@@ -266,6 +272,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab6,
     tabContentImg: images.tabContent6,
+    tanMobileContentImg: images.tabMobileContent6,
     color: "blue",
   },
   {
@@ -274,6 +281,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab4,
     tabContentImg: images.tabContent4,
+    tanMobileContentImg: images.tabMobileContent4,
     color: "orange",
   },
   {
@@ -282,6 +290,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab5,
     tabContentImg: images.tabContent5,
+    tanMobileContentImg: images.tabMobileContent5,
     color: "pink",
   },
   {
@@ -290,6 +299,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab6,
     tabContentImg: images.tabContent6,
+    tanMobileContentImg: images.tabMobileContent6,
     color: "blue",
   },
   {
@@ -298,6 +308,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab4,
     tabContentImg: images.tabContent4,
+    tanMobileContentImg: images.tabMobileContent4,
     color: "orange",
   },
   {
@@ -306,6 +317,7 @@ export const tab = [
     text: "Вице-президент по биомедицинским исследованиям Сколковского института науки и технологий",
     tabImg: images.tab5,
     tabContentImg: images.tabContent5,
+    tanMobileContentImg: images.tabMobileContent5,
     color: "pink",
   },
 ];
@@ -316,6 +328,7 @@ export const feedback = [
     text: `Очень нравится реально дружный коллектив, то, что учителя умеют заинтересовать, дают самый полезный и нужный материал, говорят обо всем честно и открыто. Крутые пробники, практикумы и нескучные, иногда неформальные лекции:) Пытаются дать всё по максимуму, и это отлично получается. Спасибо ❤️`,
     // textIcon: AiFillHeart,
     img: images.feed1,
+    imgMobile: images.feedMobile1,
     color: "pink",
   },
   {
@@ -323,6 +336,7 @@ export const feedback = [
     subtitle: "Курс по русскому языку, 2022 г.",
     text: "Замечательная школа для подготовки ко всероссу и перечневым! Системная, грамотная подача материала и его закрепление. Спасибо вам большое!",
     img: images.feed2,
+    imgMobile: images.feedMobile2,
     color: "red",
   },
   {
@@ -330,6 +344,7 @@ export const feedback = [
     subtitle: "ПРОШеЛ Курс по истории В 2022 ",
     text: "«Общее дело» - это то, что я хотел получить от онлайн-школы, и даже больше. Внимание к деталям, хорошая организация, проработанная программа, систематизированная подача материала, большое кол-во работ, многоформатность и, конечно, люди, олимпиадное коммьюнити - всё это позволило мне получать настоящее удовольствие при обучении здесь. За полгода я приобрел очень много знаний как в области обществознания, так и касаемо организации самих олимпиад. С замечательными преподавателями, к которым всегда можно обратиться и которые обладают невероятным опытом, можно поговорить и в неформальной обстановке. Сами организаторы и преподаватели сохраняют связь с обучающимся: вы всегда сможете высказать свои предложения и претензии к организации учебного процесса. «Общее дело» даёт все самые нужные знания и уже зарекомендовало себя как эффективная и ответственная онлайн-школа.",
     img: images.feed3,
+    imgMobile: images.feedMobile3,
     color: "blue",
   },
 ];
@@ -341,7 +356,7 @@ export const coursesPlus: { img: string; title: string; text: string }[] = [
   },
   {
     img: "",
-    title: "РАЗНООБРАЗНЫЙ ФОРАТ ЗАНЯТИЙ",
+    title: "РАЗНООБРАЗНЫЙ ФОРМАТ ЗАНЯТИЙ",
     text: "Онлайн занятия, интенсивы, круглые столы - все, чтобы сделать обучение разнообразным и более продуктивным!",
   },
   {
@@ -361,7 +376,7 @@ export const filter = [
     name: "Обществознание",
   },
   {
-    name: "право",
+    name: "Право",
   },
   {
     name: "История",
@@ -465,7 +480,7 @@ export const filterContent: IFilterContent[] = [
     color: "blue",
     deadline: "2 месяца",
     desc: "Курс по биологии",
-    text: "На нашСтоимостьем двухмесячном курсе будет уделено внимание только практическим занятиям. На конкретных примерах вам станет понятна специфика перечневых олимпиад по обществознанию для поступления в лучшие вузы России.",
+    text: "На нашем двухмесячном курсе будет уделено внимание только практическим занятиям. На конкретных примерах вам станет понятна специфика перечневых олимпиад по обществознанию для поступления в лучшие вузы России.",
     duration: "от 1 500 руб",
     certainDur: "2-4",
     coast: "",
@@ -487,7 +502,7 @@ export const filterContent: IFilterContent[] = [
     color: "orange",
     deadline: "2 месяца",
     desc: "Курс по русскому языку",
-    text: "На нашСтоимостьем двухмесячном курсе будет уделено внимание только практическим занятиям. На конкретных примерах вам станет понятна специфика перечневых олимпиад по обществознанию для поступления в лучшие вузы России.",
+    text: "На нашем двухмесячном курсе будет уделено внимание только практическим занятиям. На конкретных примерах вам станет понятна специфика перечневых олимпиад по обществознанию для поступления в лучшие вузы России.",
     duration: "от 1 500 руб",
     certainDur: "2-4",
     coast: "blue",

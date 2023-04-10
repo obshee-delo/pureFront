@@ -1,9 +1,9 @@
 import React from "react";
 import { getCourse } from "../common/text";
-import AboutCourses from "../components/AboutCourses";
-import Chose from "../common/Chose";
-import GeneralHeader from "../common/GeneralHeader";
-import Footer from "../components/Footer";
+import AboutCourses from "../components/userPages/AboutCourses";
+import Chose from "../common/commonCoponents/Chose";
+import GeneralHeader from "../common/commonHeader/GeneralHeader";
+import Footer from "../common/footer/Footer";
 import { setHLogo, backLogo } from "../redux/checkRegistrationSlice";
 import { useAppDispatch } from "../redux/state";
 import { useParams } from "react-router-dom";

@@ -1,18 +1,19 @@
 import React from "react";
 import AboutIntensive from "../components/AboutIntensive";
-import Btn from "../common/Btn";
-import Footer from "../components/Footer";
-import GeneralHeader from "../common/GeneralHeader";
-import Price from "../components/Price";
-import Questions from "../components/Questions";
-import Reason from "../components/Reason";
-import Teachers from "../components/Teachers";
-import Wait from "../components/Wait";
-import Week from "../components/Week";
-import FeedBack from "../components/FeedBack";
+import Btn from "../common/commonCoponents/Btn";
+import Footer from "../common/footer/Footer";
+import GeneralHeader from "../common/commonHeader/GeneralHeader";
+import Price from "../components/intensivePage/Price";
+import Questions from "../components/intensivePage/Questions";
+import Reason from "../components/intensivePage/Reason";
+import Week from "../components/intensivePage/Week";
+import FeedBack from "../common/commonCoponents/FeedBack";
 import { setHLogo, backLogo } from "../redux/checkRegistrationSlice";
 import { useAppDispatch } from "../redux/state";
 import { useParams } from "react-router-dom";
+import Teachers from "../components/intensivePage/Teachers";
+import Wait from "../components/intensivePage/Wait";
+
 const Intensive = () => {
   const { name } = useParams();
   const dispatch = useAppDispatch();
