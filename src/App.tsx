@@ -1,5 +1,7 @@
 import { Route, Routes, useParams } from "react-router-dom";
 import React from "react";
+import { ClientService, CourseService } from "obsheedelo-sdk";
+
 import Nav from "./common/navigation/Nav";
 import About from "./pages/About";
 import CertainCourse from "./pages/CertainCourse";
@@ -15,6 +17,10 @@ import Videolessons from "./pages/Videolessons";
 import Video from "./components/userPages/Video";
 import { useAppDispatch } from "./redux/state";
 import { setUsers } from "./redux/authSlice";
+import { sdk } from "./sdk/sdk";
+const getOb = sdk.course.findByCategory({ category: "Право" }).then((el) => el);
+console.log(1);
+console.log(getOb);
 function App() {
   const dispatch = useAppDispatch();
   const user = JSON.parse(localStorage.getItem("user") || "{}");
@@ -26,15 +32,20 @@ function App() {
       <Nav />
       <div className=" flex-grow">
         <Routes>
+          {/* ГЛАВНАЯ */}
           <Route path="/" element={<Main />} />
 
           <Route path={`/courses/:name/*`}>
             <Route index element={<CertainCourse />} />
             <Route path="intensive" element={<Intensive />} />
           </Route>
+          {/* СТРАНИЦА О НАС */}
           <Route path="about" element={<About />} />
+          {/* СТРАНИЦА КУРСА, ОБЩАЯ */}
           <Route path="course/*" element={<Course />} />
+          {/* СТРАНИЦА РЕГИСТРАЦИИ */}
           <Route path="reg" element={<Registration />} />
+          {/* СТРАНИЦА ПОЛЬЗОВАТЕЛЯ */}
           <Route path="user/*" element={<Profile />}>
             <Route path="profile" element={<UserProfile />} />
             <Route path="course/*">

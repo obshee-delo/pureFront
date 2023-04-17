@@ -3,17 +3,21 @@ import { Link } from "react-router-dom";
 import { images } from "../../assets/img";
 import { duraction } from "../../common/text";
 import Title from "../../common/commonCoponents/Title";
+import { sdk } from "../../sdk/sdk";
 
 const Duraction: React.FC = () => {
   return (
     <section className="  mb-[80px] md:mb-[120px] text-[#272523]">
       <div className="wc px-[15px]">
+        {/* ЗАГОЛОВОК */}
         <Title text="Направления подготовки" />
+        {/* ОПИСАНИЕ */}
         <p className="mb-[15px] max-w-[741px] md:text-[22px] md:font-bold">
           Quam elit luctus vitae sit nulla donec vulputate. Eu quis massa vel
           sem sed adipiscing ultricies. Sit magna duis nisi orci.
         </p>
         <div className="flex justify-between gap-[30px] flex-wrap">
+          {/* ОТРИСОВКА КУРСОВ */}
           {duraction.map((el, i) => (
             <article
               key={i}
